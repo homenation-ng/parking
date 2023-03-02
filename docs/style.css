@@ -1,0 +1,287 @@
+body {
+    margin: 0px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: lightblue;
+}
+
+
+/******************************* Navbar area ***********************************/
+.navbar {
+    padding: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left img {
+    width: 48px;
+    margin-right: 20px;
+}
+
+.navbar-left div {
+    font-weight: 600;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left>* {
+    padding: 10px;
+    ;
+}
+
+/***************************** End - Navbar Area *****************************/
+
+
+
+
+
+/**************************** General features styles ************************/
+
+.features-container {
+    margin: 0px 0px 40px 0px;
+}
+
+.features-row {
+    margin: 0px 0px 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.features-row img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.features-row-one,
+.features-row-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-one,
+.feature-two,
+.feature-three,
+.feature-four {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/**************************** End - General Features styles ******************/
+
+
+
+
+
+/*********************************** Features Row One ************************/
+
+.features-row-one {
+    background-color: rgb(4, 4, 46);
+}
+
+.features-row-one img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+
+.feature-one,
+.feature-two {
+    max-width: 50%;
+    width: 50%;
+}
+
+/* Feature Two Styles */
+
+.feature-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px 16px 24px;
+}
+
+.feature-two .feature-title {
+    width: 100%;
+    text-align: left;
+    color: palegreen;
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+.feature-two .feature-description {
+    width: 100%;
+    padding: 16px 24px 16px 24px;
+    text-align: left;
+    color: palegreen;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+/* End */
+
+/*********************************** End - Features Row One *********************/
+
+
+
+
+/*********************************** Features Row Two ***************************/
+
+.features-row-two {
+    background-color: palegreen;
+}
+
+.features-row-two img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.feature-three,
+.feature-four {
+    max-width: 50%;
+    width: 50%;
+}
+
+/* Feature three styles */
+
+.feature-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px 16px 24px;
+}
+
+.feature-three .feature-title {
+    width: 100%;
+    text-align: right;
+    color: rgb(4, 4, 46);
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+.feature-three .feature-description {
+    width: 100%;
+    padding: 16px 24px 16px 24px;
+    text-align: right;
+    color: rgb(4, 4, 46);
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.feature-three .feature-description ul {
+    list-style: none;
+    text-align: right;
+    list-style-position: inside;
+}
+
+/* End */
+
+/********************************** End - Features Row Two *********************/
+
+/************************************* Footer **********************************/
+
+.footer {
+    background-color: palegreen;
+    color: rgb(4, 4, 46);
+    text-align: center;
+    padding: 50px 0;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/*********************************** End - Footer *****************************/
+
+@media screen and (max-width: 768px) {
+    .features-row {
+        flex-direction: column;
+    }
+
+    .feature-one,
+    .feature-four {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .feature-two,
+    .feature-three {
+        padding: 64px;
+        width: 100%;
+        max-width: max-content;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feature-two .feature-title {
+        font-size: 2rem;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .feature-two .feature-description {
+        font-size: 1rem;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .feature-three .feature-title {
+        font-size: 2rem;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .feature-three .feature-description {
+        font-size: 1rem;
+        padding: 8px;
+        text-align: left;
+    }
+
+
+    .feature-three .feature-description ul {
+        text-align: left;
+
+    }
+
+    .feature-three .feature-description li {
+        list-style: none;
+        text-align: left;
+        width: 100%;
+        max-width: 100%;
+        padding: 8px;
+        font-size: .8rem;
+    }
+
+
+    .footer {
+        font-size: 12px;
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features-row-two {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features-row img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
