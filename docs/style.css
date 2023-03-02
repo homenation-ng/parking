@@ -57,8 +57,9 @@ body {
 .features-row img {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 100%;
     box-sizing: border-box;
+    object-fit: cover;
 }
 
 .features-row-one,
@@ -116,7 +117,7 @@ body {
 .feature-two .feature-title {
     width: 100%;
     text-align: left;
-    color: palegreen;
+    color: #90EE90;
     font-weight: bold;
     font-size: 6rem;
 }
@@ -125,7 +126,7 @@ body {
     width: 100%;
     padding: 16px 24px 16px 24px;
     text-align: left;
-    color: palegreen;
+    color: #90EE90;
     font-weight: normal;
     font-size: 1.3rem;
 }
@@ -140,7 +141,7 @@ body {
 /*********************************** Features Row Two ***************************/
 
 .features-row-two {
-    background-color: palegreen;
+    background-color: #90EE90;
 }
 
 .features-row-two img {
@@ -194,7 +195,7 @@ body {
 /************************************* Footer **********************************/
 
 .footer {
-    background-color: palegreen;
+    background-color: #90EE90;
     color: rgb(4, 4, 46);
     text-align: center;
     padding: 50px 0;
